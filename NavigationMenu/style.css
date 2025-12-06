@@ -1,0 +1,87 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: white;
+  transition: 0.3s ease;
+  box-shadow: none;
+  z-index: 1000;
+}
+
+nav.scrolled {
+  background: #f5f5f5;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Logo */
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Menu items */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  padding: 6px 2px;
+  transition: 0.3s ease;
+}
+
+/* Hover effect */
+.nav-links li a:hover {
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+}
+
+/* Section styling */
+.section {
+  height: 100vh;
+  padding: 120px 40px;
+}
+
+.home {
+  background: #e8f0fe;
+}
+
+.services {
+  background: #fff;
+}
+
+.contact {
+  background: #f0f0f0;
+}
+
+/* Text styling */
+.section h1,
+.section h2 {
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.section p {
+  font-size: 18px;
+  color: #555;
+  max-width: 700px;
+  line-height: 1.6;
+}
