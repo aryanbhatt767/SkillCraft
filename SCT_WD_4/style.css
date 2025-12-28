@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #eef3ff, #ffffff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-container {
+  width: 420px;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(65, 105, 225, 0.25);
+}
+
+h1 {
+  text-align: center;
+  color: #4169E1;
+  margin-bottom: 20px;
+}
+
+.input-box {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap; /* ⭐ key fix */
+}
+
+
+.input-box input {
+  padding: 10px;
+  border: 2px solid #4169E1;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.input-box input[type="text"] {
+  flex: 1 1 100%;
+}
+
+.input-box input[type="datetime-local"] {
+  flex: 1 1 60%;
+}
+
+.input-box button {
+  flex: 1 1 35%;
+}
+
+
+.input-box button {
+  background: #4169E1;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.input-box button:hover {
+  background: #1f3fbf;
+}
+
+#taskList {
+  list-style: none;
+}
+
+/* Task Item */
+.task {
+  background: #f5f7ff;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task.completed {
+  opacity: 0.6;
+  text-decoration: line-through;
+}
+
+.task-info {
+  flex: 1;
+}
+
+.task-info small {
+  display: block;
+  font-size: 12px;
+  color: #555;
+}
+
+/* Action buttons */
+.task-actions button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  margin-left: 6px;
+}
+
+.complete-btn { color: green; }
+.edit-btn { color: #4169E1; }
+.delete-btn { color: red; }
