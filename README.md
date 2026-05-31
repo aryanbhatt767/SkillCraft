@@ -78,7 +78,7 @@ During this internship, I strengthened my understanding of:
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/SkillCraft.git
+git clone https://github.com/aryanbhatt767/SkillCraft.git
 ```
 
 ### Navigate to the Project
